@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SEO Report</title>
+    <style>
+        body { font-family: sans-serif; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>SEO Report – {{ date }}</h1>
+    <h2>Top Keywords</h2>
+    <ul>
+        {% for keyword in keywords %}
+            <li>{{ keyword.query }} – Klicks: {{ keyword.clicks }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
 
