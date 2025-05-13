@@ -1,5 +1,3 @@
-yaml
-
 name: SEO Report Automation
 
 on:
@@ -28,4 +26,3 @@ jobs:
         EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
       run: python report.py
-
